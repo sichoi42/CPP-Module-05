@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 17:34:23 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/26 18:24:03 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/27 19:30:25 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int	Form::getExecuteSign(void) const
 
 void	Form::beSigned(const Bureaucrat& b)
 {
-	if (b.getGrade() >= _grade_sign)
+	if (b.getGrade() <= _grade_sign)
 		_is_signed = true;
 	else
 		throw(GradeTooLowException());

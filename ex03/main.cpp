@@ -6,7 +6,7 @@
 /*   By: sichoi <sichoi@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 15:46:53 by sichoi            #+#    #+#             */
-/*   Updated: 2022/07/26 21:50:43 by sichoi           ###   ########.fr       */
+/*   Updated: 2022/07/27 20:10:14 by sichoi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ int	main(void)
 	Form	*wrong = no_named.makeForm("wrong", "wrong");
 
 	(void)wrong;
-	Bureaucrat b1("bureau1", 146);
-	Bureaucrat b2("bureau2", 73);
-	Bureaucrat b3("bureau3", 26);
+	Bureaucrat b1("bureau1", 1);
+	Bureaucrat b2("bureau2", 1);
+	Bureaucrat b3("bureau3", 1);
 
 	b1.signForm(*scf);
 	b2.signForm(*rrf);
